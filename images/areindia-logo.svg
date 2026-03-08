@@ -1,0 +1,19 @@
+<svg width="1200" height="420" viewBox="0 0 1200 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="420" fill="#ffffff"/>
+  <g transform="translate(60,20)">
+    <path d="M180 280 L310 40 L440 280 H385 L310 150 L235 280 H180Z" fill="#027000"/>
+    <path d="M255 230 C300 230 335 220 360 195 L505 55 L485 55 L560 40 L545 115 L528 95 L390 230 C365 257 330 270 280 270 H250 V250 H280 C300 250 316 247 330 241 C300 245 278 245 255 245 V230Z" fill="#FF5D00"/>
+    <rect x="340" y="195" width="28" height="85" fill="#FF5D00"/>
+    <rect x="392" y="175" width="28" height="105" fill="#FF5D00"/>
+    <rect x="444" y="145" width="28" height="135" fill="#FF5D00"/>
+    <rect x="496" y="120" width="28" height="160" fill="#FF5D00"/>
+    <rect x="334" y="268" width="40" height="10" fill="#00599D"/>
+    <rect x="386" y="268" width="40" height="10" fill="#00599D"/>
+    <rect x="438" y="268" width="40" height="10" fill="#00599D"/>
+    <rect x="490" y="268" width="40" height="10" fill="#00599D"/>
+    <circle cx="285" cy="275" r="6" fill="#00599D"/>
+    <circle cx="301" cy="275" r="6" fill="#00599D"/>
+  </g>
+  <text x="160" y="370" font-family="Poppins, Arial, sans-serif" font-size="96" font-weight="700" fill="#027000">AreIndia</text>
+  <text x="700" y="370" font-family="Poppins, Arial, sans-serif" font-size="96" font-weight="700" fill="#FF5D00">Tax</text>
+</svg>

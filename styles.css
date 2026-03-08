@@ -1,0 +1,270 @@
+:root {
+  --green: #027000;
+  --orange: #ff5d00;
+  --blue: #00599d;
+  --text: #173321;
+  --muted: #4b6653;
+  --bg: #f4fbf4;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
+
+.container {
+  width: min(1150px, 94%);
+  margin: 0 auto;
+}
+
+.notice-bar {
+  background: var(--green);
+  color: var(--white);
+  font-size: 0.9rem;
+}
+
+.notice-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.brand-section {
+  background: var(--white);
+  border-bottom: 4px solid rgba(2, 112, 0, 0.15);
+}
+
+.brand-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.site-logo {
+  width: min(620px, 100%);
+  height: auto;
+}
+
+.main-nav {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: var(--orange);
+}
+
+.main-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-nav a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--white);
+  padding: 0.85rem 1rem;
+  font-weight: 600;
+  border-right: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.main-nav a:hover {
+  background: rgba(0, 0, 0, 0.12);
+}
+
+.hero {
+  padding: 2rem 0;
+  background:
+    linear-gradient(150deg, rgba(2, 112, 0, 0.94) 0 60%, rgba(255, 93, 0, 0.9) 60% 90%, rgba(0, 89, 157, 0.86) 90% 100%);
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 1rem;
+}
+
+.hero-panel,
+.hero-side {
+  background: var(--white);
+  border-radius: 14px;
+  padding: 1.3rem;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+.tag {
+  display: inline-block;
+  margin: 0;
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  background: var(--blue);
+  color: var(--white);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.hero-panel h1 {
+  color: var(--green);
+  margin: 0.8rem 0;
+  line-height: 1.2;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+}
+
+.hero-panel p {
+  color: var(--muted);
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.btn {
+  text-decoration: none;
+  color: var(--white);
+  padding: 0.8rem 1.1rem;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.btn-orange {
+  background: var(--orange);
+}
+
+.btn-blue {
+  background: var(--blue);
+}
+
+.hero-side img {
+  width: 100%;
+  border: 2px solid rgba(2, 112, 0, 0.3);
+  border-radius: 12px;
+  background: #fff;
+}
+
+.services,
+.about,
+.contact {
+  padding: 2.5rem 0;
+}
+
+h2 {
+  margin-top: 0;
+  color: var(--green);
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.service-box {
+  background: var(--white);
+  border-top: 4px solid var(--orange);
+  border-left: 4px solid var(--green);
+  border-bottom: 3px solid var(--blue);
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+
+.service-box h3 {
+  margin-top: 0;
+  color: #075f04;
+}
+
+.about {
+  background: rgba(2, 112, 0, 0.08);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 1rem;
+}
+
+.metrics {
+  background: var(--white);
+  border-radius: 12px;
+  padding: 1rem;
+  display: grid;
+  gap: 0.7rem;
+  border: 2px solid rgba(0, 89, 157, 0.25);
+}
+
+.metrics div {
+  background: #f8fffa;
+  border-radius: 8px;
+  padding: 0.8rem;
+}
+
+.metrics strong {
+  display: block;
+  color: var(--orange);
+  font-size: 1.2rem;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.9rem;
+}
+
+.contact-grid article {
+  background: var(--white);
+  border-radius: 10px;
+  padding: 1rem;
+  border-bottom: 3px solid var(--blue);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.06);
+}
+
+.footer {
+  background: var(--green);
+  color: var(--white);
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.9rem 0;
+}
+
+@media (max-width: 980px) {
+  .hero-grid,
+  .service-grid,
+  .contact-grid,
+  .about-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 680px) {
+  .notice-content,
+  .footer-row {
+    flex-direction: column;
+  }
+
+  .hero-grid,
+  .service-grid,
+  .contact-grid,
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .main-nav a {
+    padding: 0.75rem 0.7rem;
+    font-size: 0.9rem;
+  }
+}
